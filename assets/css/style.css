@@ -28,6 +28,9 @@ h5{
 h6{
 	font-size:18px;
 }
+p{
+	font-size:16px; color:#050506
+}
 
 header{
 	background: #6d9fea;
@@ -72,6 +75,12 @@ footer a{
 	color:#d5d3dd;
 	background: #1e7ad2;
 }
+#profile_pic{
+	padding:10px 20px;
+	display: inline-block;
+	border-radius:50px;
+}
+
 #s2{
 	padding:50px ;
 }
@@ -85,7 +94,12 @@ footer a{
 
 #s3{
 	padding:100px;
-	background:#1e7ad2;
-	text-align: center;
+	background:#6d9fea;
+	text-align: left;
 }
 
+#s4{
+	padding:100px;
+	background:#6d9fea;
+	text-align: left;
+}

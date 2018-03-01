@@ -63,6 +63,24 @@ footer a{
 	padding:10px;
 }
 
+footer i{
+    color:#fdcc66;
+	text-decoration: none;
+	padding:10px;
+}
+
+.fab fa-linkedin-in{
+    color:#fdcc66;
+	text-decoration: none;
+	padding:10px;
+}
+
+footer small{
+    color:#fdcc66;
+	text-decoration: none;
+	padding:10px;
+}
+
 .btn, input[type='submit']{
 	text-decoration: none;
 	background:#d5d3dd;
@@ -75,10 +93,34 @@ footer a{
 	color:#d5d3dd;
 	background: #1e7ad2;
 }
-#profile_pic{
+
+/*
+.center {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+*/
+
+#profile_pic img{
 	padding:10px 20px;
-	display: inline-block;
-	border-radius:50px;
+	border-radius:50%;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+#s1 h1, h2, p{
+	text-align: center;
+}
+
+.column {
+    float: left; width:450px; }
+
+.clear{
+	clear:both;
 }
 
 #s2{
@@ -86,11 +128,21 @@ footer a{
 }
 
 #s2 h2{
-	text-align: center;
+	text-align: left;
 }
-.clear{
-	clear:both;
+
+#vid{
+	position:relative;
 }
+
+#s2 .btn{
+    border-color:#1e7ad2;
+}
+
+#s2 p{
+    position:relative;
+    top:10px
+    }
 
 #s3{
 	padding:100px;

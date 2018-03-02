@@ -29,12 +29,12 @@ h6{
 	font-size:18px;
 }
 p{
-	font-size:16px; color:#050506
+	font-size:16px; color:#050506;
 }
 
 header{
 	background: #6d9fea;
-	padding:20px
+	padding:20px;
 }
 nav ul {
 	list-style: none;
@@ -94,15 +94,6 @@ footer small{
 	background: #1e7ad2;
 }
 
-/*
-.center {
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-*/
-
 #profile_pic img{
 	padding:10px 20px;
 	border-radius:50%;
@@ -127,8 +118,18 @@ footer small{
 	padding:50px ;
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container > div {
+  width: 1000px;
+  margin: 10px;
+}
+
 #s2 h2{
-	text-align: left;
+	text-align: center;
 }
 
 #vid{
@@ -136,18 +137,24 @@ footer small{
 }
 
 #s2 .btn{
-    border-color:#1e7ad2;
+    border:1px #1e7ad2 solid;
+    margin:5px;
+
 }
 
 #s2 p{
     position:relative;
-    top:10px
+    top:20px
     }
 
 #s3{
 	padding:100px;
 	background:#6d9fea;
-	text-align: left;
+}
+
+#s3 p{
+    display:inline block;
+    text-align:left
 }
 
 #s4{

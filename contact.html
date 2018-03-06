@@ -31,6 +31,11 @@
 				text-align: left;
                 color: #1e7ad2;
             }
+            .choice{
+				font-size:22px;
+				display: inline-block;
+				text-align: left;
+            }
 			input, textarea{
 				padding:10px;
 				border-radius:10px;
@@ -58,11 +63,11 @@
             <input type="text" name="fn" Placeholder="John Doe" required> </label>
         <br>
         <label> What type of audience do you want to reach? </label>
-        <label>
+        <label class="choice">
             <input type="radio" name="a" value="c">Consumer </label>
-        <label>
+        <label class="choice">
             <input type="radio" name="a" value="b">Business to Business (B2B)</label>
-        <label>
+        <label class="choice">
             <input type="radio" name="a" value="i">Industry professionals</label>
         <br>
         <input type="text" name="rad" placeholder="Other">
@@ -75,13 +80,13 @@
         <label> What are your preferred method(s) of contact? </label>
         <p class="desc">Check all that apply
         </p>
-        <label>
+        <label class="choice">
             <input type="checkbox" name="n" value="e">Email </label>
         <br>
-        <label>
+        <label class="choice">
             <input type="checkbox" name="n" value="p">Phone </label>
         <br>
-        <label>
+        <label class="choice">
             <input type="checkbox" name="n" value="r">Text </label>
         <br>
         <input type="text" name="chk" placeholder="Other">

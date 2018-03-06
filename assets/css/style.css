@@ -1,164 +1,202 @@
-*{
-	box-sizing: border-box;
-	font-size: 16px;
-	font-family: 'Arial', sans-serif;
-	color: #1e7ad2;
-	padding:0;
-	margin:0;
-}
-body{
-	background: #82b4f3;
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #1e7ad2;
+    padding: 0;
+    margin: 0;
 }
 
-h1{
-	font-size:60px;
-}
-h2{
-	font-size:40px;
-}
-h3{
-	font-size:30px;
-}
-h4{
-	font-size:24px;
-}
-h5{
-	font-size:20px;
-}
-h6{
-	font-size:18px;
-}
-p{
-	font-size:16px; color:#050506;
+body {
+    background: #82b4f3;
 }
 
-header{
-	background: #6d9fea;
-	padding:20px;
+h1 {
+    font-size: 60px;
 }
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    color: #050506;
+}
+
+header {
+    background: #6d9fea;
+    padding: 20px;
+}
+
 nav ul {
-	list-style: none;
-	text-align: center;
-}
-nav li{
-	display: inline-block;
-}
-nav a{
-	text-decoration: none;
-	padding:5px 10px;
-	border:1px solid #1e7ad2;
-	border-radius:10px;
+    list-style: none;
+    text-align: center;
 }
 
-footer{
-	padding:20px;
-	text-align: center;
-	background: #1e7ad2;
-	color:#fdcc66;
+nav li {
+    display: inline-block;
 }
 
-footer a{
-    color:#fdcc66;
-	text-decoration: none;
-	padding:10px;
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #1e7ad2;
+    border-radius: 10px;
 }
 
-footer i{
-    color:#fdcc66;
-	text-decoration: none;
-	padding:10px;
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e7ad2;
+    color: #fdcc66;
 }
 
-.fab fa-linkedin-in{
-    color:#fdcc66;
-	text-decoration: none;
-	padding:10px;
+footer a {
+    color: #fdcc66;
+    text-decoration: none;
+    padding: 10px;
 }
 
-footer small{
-    color:#fdcc66;
-	text-decoration: none;
-	padding:10px;
+footer i {
+    color: #fdcc66;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.btn, input[type='submit']{
-	text-decoration: none;
-	background:#d5d3dd;
-	padding:10px 20px;
-	display: inline-block;
-	border-radius:10px;
+.fab fa-linkedin-in {
+    color: #fdcc66;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.btn:hover, input[type='submit']:hover{
-	color:#d5d3dd;
-	background: #1e7ad2;
+footer small {
+    color: #fdcc66;
+    text-decoration: none;
+    padding: 10px;
 }
 
-#profile_pic img{
-	padding:10px 20px;
-	border-radius:50%;
-    display: block; 
+.btn,
+input[type='submit'] {
+    text-decoration: none;
+    background: #d5d3dd;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.btn:hover,
+input[type='submit']:hover {
+    color: #d5d3dd;
+    background: #1e7ad2;
+}
+
+#profile_pic img {
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
 }
 
-#s1 h1, h2, p{
-	text-align: center;
+#s1 h1,
+h2,
+p {
+    text-align: center;
 }
 
 .column {
-    float: left; width:450px; }
-
-.clear{
-	clear:both;
+    float: left;
+    width: 450px;
 }
 
-#s2{
-	padding:50px ;
+.clear {
+    clear: both;
 }
 
-.flex-container {
-  display: flex;
-  align-items: center;
+#s2 {
+    padding: 50px;
 }
 
-.flex-container > div {
-  width: 1000px;
-  margin: 10px;
-}
+#flex-container {
 
-#s2 h2{
-	text-align: center;
-}
+    display: flex;
 
-#vid{
-	position:relative;
-}
+    align-content: center;
 
-#s2 .btn{
-    border:1px #1e7ad2 solid;
-    margin:5px;
+    align-items: center;
 
 }
 
-#s2 p{
-    position:relative;
-    top:20px
-    }
+#flex-container div {
 
-#s3{
-	padding:100px;
-	background:#6d9fea;
+    width: 50%;
+
+    padding: 10px;
+
 }
 
-#s3 p{
-    display:inline block;
-    text-align:left
+#flex-container div img {
+
+    width: 100%;
+
 }
 
-#s4{
-	padding:100px;
-	background:#6d9fea;
-	text-align: left;
+#github {
+    text-align: center;
+}
+
+#github .btn {
+    margin: 10px;
+}
+
+#s2 h2 {
+    text-align: center;
+}
+
+#vid {
+    position: relative;
+}
+
+#s2 .btn {
+    margin: 5px;
+
+}
+
+#s2 p {
+    position: relative;
+    top: 20px
+}
+
+#s3 {
+    padding: 100px;
+    background: #6d9fea;
+}
+
+#s3 p {
+    display: inline block;
+    text-align: left
+}
+
+#s4 {
+    padding: 50px;
+    background: #6d9fea;
+    text-align: left;
 }

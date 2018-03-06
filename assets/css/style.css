@@ -120,7 +120,11 @@ input[type='submit']:hover {
 h2,
 p {
     text-align: center;
+    
 }
+
+#s1 h1 {
+    font-family: 'Dancing Script', cursive;}
 
 .column {
     float: left;
@@ -185,7 +189,7 @@ p {
 }
 
 #s3 {
-    padding: 100px;
+    padding: 50px;
     background: #6d9fea;
 }
 
@@ -196,6 +200,6 @@ p {
 
 #s4 {
     padding: 50px;
-    background: #6d9fea;
+    background: #82b4f3;
     text-align: left;
 }

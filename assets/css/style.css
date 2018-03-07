@@ -141,6 +141,7 @@ p {
 
 #s2 {
     padding: 50px;
+    background: #6d9fea;
 }
 
 #flex-container {
@@ -160,6 +161,12 @@ p {
     padding: 10px;
 }
 
+#flex-container div p{
+    margin-right: 25px;
+    line-height:1.5;
+
+}
+
 #flex-container div img {
 
     width: 100%;
@@ -168,6 +175,7 @@ p {
 
 #github {
     text-align: center;
+    margin-left:25%
 }
 
 #github .btn {
@@ -189,25 +197,25 @@ p {
 
 #s2 p {
     position: relative;
-    top: 20px
+    top: 20px;
 }
 
 #s3 {
     padding: 50px;
-    background: #6d9fea;
+    background: #82b4f3;
 }
 
 #s3 p {
     display: inline block;
-    text-align: left
+    text-align: left;
 }
 
 #s4 {
     padding: 50px;
-    background: #82b4f3;
+    background: #6d9fea;
 }
 
 #s4 p{
     text-align: left;
-    margin-left: 25%
+    margin-left: 25%;
 }

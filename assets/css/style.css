@@ -57,8 +57,13 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid #1e7ad2;
     border-radius: 10px;
+    background: #d5d3dd;
+}
+
+nav a:hover {
+    color: #d5d3dd;
+    background: #1e7ad2;
 }
 
 footer {

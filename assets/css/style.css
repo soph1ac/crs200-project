@@ -38,6 +38,7 @@ h6 {
 p {
     font-size: 16px;
     color: #050506;
+    line-height:1.5;
 }
 
 header {
@@ -167,9 +168,8 @@ p {
 }
 
 #flex-container div p{
+    margin-left: 10px;
     margin-right: 25px;
-    line-height:1.5;
-
 }
 
 #flex-container div img {

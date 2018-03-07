@@ -205,5 +205,9 @@ p {
 #s4 {
     padding: 50px;
     background: #82b4f3;
+}
+
+#s4 p{
     text-align: left;
+    margin-left: 25%
 }

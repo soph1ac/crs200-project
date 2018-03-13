@@ -43,6 +43,11 @@
             width: 50%;
         }
 
+        .tspace {
+            padding: 10px;
+            margin-top:10px;
+        }
+        
         /* Customize the label (the container) */
 
         .container2 {
@@ -163,20 +168,20 @@
         <form>
             <label><i class="far fa-handshake"></i> Name
             <br>
-            <input type="text" name="fn" Placeholder="John Doe" required> </label>
+            <input type="text" name="fn" class="tspace" Placeholder="John Doe" required > </label>
             <br>
             <label><i class="far fa-handshake"></i> What type of audience do you want to reach? </label>
             <div id="radio">
                 <label class="container2">Consumer
-  <input type="radio" checked="checked" name="a" value="c">
+  <input type="radio" name="a" value="c">
   <span class="checkmark"></span>
 </label>
                 <label class="container2">Business to Business (B2B)
-  <input type="radio" checked="checked" name="a" value="b">
+  <input type="radio" name="a" value="b">
   <span class="checkmark"></span>
 </label>
                 <label class="container2">Industry professionals
-  <input type="radio" checked="checked" name="a" value="i">
+  <input type="radio" name="a" value="i">
   <span class="checkmark"></span>
 </label>
             </div>
@@ -191,17 +196,17 @@
         <p class="desc">Check all that apply
         </p></label>
             <label class="container2">Email
-    <input type="checkbox" checked="checked" name="n" value="e">
+    <input type="checkbox"  name="n" value="e">
   <span class="checkmark"></span>
 </label>
             <br>
             <label class="container2">Phone
-  <input type="checkbox" checked="checked" name="n" value="p">
+  <input type="checkbox" name="n" value="p">
   <span class="checkmark"></span>
 </label>
             <br>
             <label class="container2">Text
-  <input type="checkbox" checked="checked" name="n" value="t">
+  <input type="checkbox" name="n" value="t">
   <span class="checkmark"></span>
 </label>
             <br>

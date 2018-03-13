@@ -1,58 +1,151 @@
-<!doctype html>
+    <!doctype html>
 <html>
 
 <head>
     <title>Contact</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-		<style>
-			#container{
-				padding:100px;
-			}
-			#title{
-				text-align: center;
-				margin-bottom: 20px;
-				font-size:50px;
-			}
-			#contact{
-				width:50%;
-				padding-left:30px;
-			}
-			
-			label{
-				font-size:24px;
-				padding-bottom:20px;
-				display: inline-block;
-				width:100%;
-			}
-            .desc{
-				font-size:16px;
-				text-align: left;
-                color: #1e7ad2;
-            }
-            .choice{
-				font-size:22px;
-				display: inline-block;
-				text-align: left;
-            }
-			input{
-				padding:10px;
-				border-radius:10px;
-				border:1px solid #D4CDC3;
-				width:50%;
-            }
-            textarea{
-                padding:10px;
-				border-radius:10px;
-				border:1px solid #D4CDC3;
-				width:10px;
-                }
-            .icons{
-                margin-left:-10px
-				width:10%;
-            }
-		</style>
+    <style>
+        #container {
+            padding: 100px;
+        }
+
+        #title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+
+        #contact {
+            width: 50%;
+            padding-left: 30px;
+        }
+
+        label {
+            font-size: 24px;
+            padding-bottom: 20px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .desc {
+            font-size: 16px;
+            text-align: left;
+            color: #1e7ad2;
+        }
+
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #D4CDC3;
+            width: 50%;
+        }
+
+        /* Customize the label (the container) */
+
+        .container2 {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+
+        .container2 input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom checkbox */
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+
+        .container2:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+
+        .container2 input:checked~.checkmark {
+            background-color: #1e7ad2;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+
+        .container2 input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+
+        .container2 .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        /* Create a custom radio button */
+
+        #radio .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        #radio .container2 .checkmark:after {
+            top: 8px;
+            left: 7px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+
+        #radio .container2 input:checked~.checkmark {
+            background-color: #1e7ad2;
+        }
+    </style>
 </head>
+
 
 <body>
     <header>
@@ -66,50 +159,63 @@
     <h1 id="title">Contact Sophia for Website Development Success</h1>
     <p>Enter accurate information for a better personalized experience
     </p>
-		<div id="contact">
-    <form>
-        <label><i class="far fa-handshake"></i> Name
+    <div id="contact">
+        <form>
+            <label><i class="far fa-handshake"></i> Name
             <br>
             <input type="text" name="fn" Placeholder="John Doe" required> </label>
-        <br>
-        <label><i class="far fa-handshake"></i> What type of audience do you want to reach? </label>
-        <label class="choice">
-            <input class="icons" type="radio" name="a" value="c">Consumer </label>
-        <label class="choice">
-            <input type="radio" name="a" value="b">Business to Business (B2B)</label>
-        <label class="choice">
-            <input type="radio" name="a" value="i">Industry professionals</label>
-        <br>
-        <input type="text" name="rad" placeholder="Other">
-        <br>
-        <br>
-        <label><i class="far fa-handshake"></i> Email
+            <br>
+            <label><i class="far fa-handshake"></i> What type of audience do you want to reach? </label>
+            <div id="radio">
+                <label class="container2">Consumer
+  <input type="radio" checked="checked" name="a" value="c">
+  <span class="checkmark"></span>
+</label>
+                <label class="container2">Business to Business (B2B)
+  <input type="radio" checked="checked" name="a" value="b">
+  <span class="checkmark"></span>
+</label>
+                <label class="container2">Industry professionals
+  <input type="radio" checked="checked" name="a" value="i">
+  <span class="checkmark"></span>
+</label>
+            </div>
+            <input type="text" name="rad" placeholder="Other">
+            <br>
+            <br>
+            <label><i class="far fa-handshake"></i> Email
             <p class="desc">This is the email where you will receive Sophia's correspondence.</p>
             <input type="email" name="email">
         </label>
-        <label><i class="far fa-handshake"></i> What are your preferred method(s) of contact? </label>
+            <label><i class="far fa-handshake"></i> What are your preferred method(s) of contact? 
         <p class="desc">Check all that apply
-        </p>
-        <label class="choice">
-            <input type="checkbox" name="n" value="e">Email </label>
-        <br>
-        <label class="choice">
-            <input type="checkbox" name="n" value="p">Phone </label>
-        <br>
-        <label class="choice">
-            <input type="checkbox" name="n" value="r">Text </label>
-        <br>
-        <input type="text" name="chk" placeholder="Other">
-        <br>
-        <br>
-        <label><i class="far fa-handshake"></i> What is your contact number? (Optional)
+        </p></label>
+            <label class="container2">Email
+    <input type="checkbox" checked="checked" name="n" value="e">
+  <span class="checkmark"></span>
+</label>
+            <br>
+            <label class="container2">Phone
+  <input type="checkbox" checked="checked" name="n" value="p">
+  <span class="checkmark"></span>
+</label>
+            <br>
+            <label class="container2">Text
+  <input type="checkbox" checked="checked" name="n" value="t">
+  <span class="checkmark"></span>
+</label>
+            <br>
+            <input type="text" name="chk" placeholder="Other">
+            <br>
+            <br>
+            <label><i class="far fa-handshake"></i> What is your contact number? (Optional)
         <p class="desc">You will only be contacted if this is one of your preferred method(s) of contact.
         </p>
             <input type="text" name="fn" Placeholder="xxx-xxx-xxxx"> </label>
-        <br>
-        <br>
-        <input type="submit" name="submit" value="Send">
-    </form>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Send">
+        </form>
     </div>
 </body>
     

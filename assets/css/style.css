@@ -95,19 +95,22 @@ footer i {
 	}
 }
 
-footer div .fa-linkedin-in:hover{
+footer div div{
+        display:inline-block;
+    width:auto;
+    text-align: center;
+
+}
+
+
+footer div div:hover{
   -webkit-animation: iconflip 2s;
   -moz-animation: iconflip 2s;
   -o-animation: iconflip 2s;
   animation: iconflip 2s;
 }
 
-footer div .fa-twitter:hover{
-  -webkit-animation: iconflip 2s;
-  -moz-animation: iconflip 2s;
-  -o-animation: iconflip 2s;
-  animation: iconflip 2s;
-}
+
 
 footer small {
     color: #fdcc66;
